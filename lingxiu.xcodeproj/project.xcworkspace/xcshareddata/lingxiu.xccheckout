@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2C98DED7-5F0C-4166-AAA9-953CA0C513EC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>lingxiu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>16F149ADAB7DB2279BA912A778F26359076DB47D</key>
+		<string>https://github.com/newstmd/lingxiu.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>lingxiu.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>16F149ADAB7DB2279BA912A778F26359076DB47D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/newstmd/lingxiu.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>16F149ADAB7DB2279BA912A778F26359076DB47D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>16F149ADAB7DB2279BA912A778F26359076DB47D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lingxiu</string>
+		</dict>
+	</array>
+</dict>
+</plist>
