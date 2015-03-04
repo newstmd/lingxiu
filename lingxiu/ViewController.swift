@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
     //通过日期格式"0101"获得当天的内容
     func readPlistMessage(dateString:String)->(String,String){
-        var urlPath = "http://219.153.125.103:12121/gethmgq.aspx?datekey=0101"
+        var urlPath = "http://219.153.125.103:12121/gethmgq.aspx?datekey=0102"
         var url = NSURL(string: urlPath)
         var data = NSData(contentsOfURL: url!, options: NSDataReadingOptions.DataReadingUncached, error: nil)
         var json:AnyObject = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil)!
