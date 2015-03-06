@@ -10,12 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myTitleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var (title,jieshuo) = readPlistMessage("0101")
-        print("here")
-        print("title:\(title)jieshuo:\(jieshuo)")
+        var dateNowString = getDateString(NSDate())
+        print(dateNowString)
+        (totleTitle,totlejieshuo) = readURLMessage(dateNowString)
+        //print("here")
+        myTitleLabel.text = totleTitle
+        
+        //print("title:\(title)jieshuo:\(jieshuo)")
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,8 +28,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     //通过日期格式"0101"获得当天的内容
-    func readPlistMessage(dateString:String)->(String,String){
-        var urlPath = "http://219.153.125.103:12121/gethmgq.aspx?datekey=0102"
+    func readURLMessage(dateString:String)->(String,String){
+        
+        var urlPath = "http://219.153.125.103:12121/gethmgq.aspx?datekey=xxxx"
+        urlPath = urlPath.stringByReplacingOccurrencesOfString("xxxx", withString: dateString, options: NSStringCompareOptions.allZeros, range: nil)
         var url = NSURL(string: urlPath)
         var data = NSData(contentsOfURL: url!, options: NSDataReadingOptions.DataReadingUncached, error: nil)
         var json:AnyObject = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil)!
@@ -32,24 +39,19 @@ class ViewController: UIViewController {
         var title = json.valueForKey("title") as String
         var jieshuo = json.valueForKey("jieshuo") as String
         //print("title:\(title)jieshuo:\(jieshuo)")
+//        var test = NSDate()
+//        print(test)
         
-        
-//        var session = NSURLSession.sharedSession()
-//        var data:NSData?
-//        var task = session.dataTaskWithURL(url!, completionHandler: { (data, response , error) -> Void in
-//            
-//            if((error) != nil){
-//                print(error.localizedDescription)
-//            }
-//            
-//        })
-//        var err: NSError?
-//        var jsonResult = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
-//        
-//        println("my Data is \(jsonResult)")
         return (title,jieshuo)
-}
-
+    }
+//获取MMdd格式的日期字符串
+    func getDateString(date:NSDate)->String{
+        var dateFormat = NSDateFormatter()
+        dateFormat.dateFormat = "MMdd"
+        var dateString = dateFormat.stringFromDate(date)
+        
+        return dateString
+    }
 
 }
 

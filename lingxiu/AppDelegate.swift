@@ -5,14 +5,18 @@
 //  Created by 唐鑫 on 15/3/3.
 //  Copyright (c) 2015年 唐鑫. All rights reserved.
 //
+var totleTitle = "当前网络异常"
+var totlejieshuo = "当前网络异常"
 
 import UIKit
 
 @UIApplicationMain
+
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+	
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

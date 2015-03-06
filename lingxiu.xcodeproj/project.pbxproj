@@ -14,6 +14,7 @@
 		065AFF0B1AA585C1008138BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065AFF091AA585C1008138BA /* LaunchScreen.xib */; };
 		065AFF171AA585C1008138BA /* lingxiuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065AFF161AA585C1008138BA /* lingxiuTests.swift */; };
 		065AFF211AA5861E008138BA /* huangmoganquan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 065AFF201AA5861D008138BA /* huangmoganquan.plist */; };
+		06A76B311AA7F83F0028F804 /* jieshuoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A76B301AA7F83F0028F804 /* jieshuoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		064EBCD11AA957840007A08E /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; };
 		065AFEFB1AA585C1008138BA /* lingxiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lingxiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		065AFEFF1AA585C1008138BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		065AFF001AA585C1008138BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		065AFF151AA585C1008138BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		065AFF161AA585C1008138BA /* lingxiuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lingxiuTests.swift; sourceTree = "<group>"; };
 		065AFF201AA5861D008138BA /* huangmoganquan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = huangmoganquan.plist; sourceTree = "<group>"; };
+		06A76B301AA7F83F0028F804 /* jieshuoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jieshuoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				065AFF091AA585C1008138BA /* LaunchScreen.xib */,
 				065AFEFE1AA585C1008138BA /* Supporting Files */,
 				065AFF201AA5861D008138BA /* huangmoganquan.plist */,
+				06A76B301AA7F83F0028F804 /* jieshuoViewController.swift */,
+				064EBCD11AA957840007A08E /* test.playground */,
 			);
 			path = lingxiu;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A76B311AA7F83F0028F804 /* jieshuoViewController.swift in Sources */,
 				065AFF031AA585C1008138BA /* ViewController.swift in Sources */,
 				065AFF011AA585C1008138BA /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +417,7 @@
 				065AFF1C1AA585C1008138BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		065AFF1D1AA585C1008138BA /* Build configuration list for PBXNativeTarget "lingxiuTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +426,7 @@
 				065AFF1F1AA585C1008138BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
