@@ -13,7 +13,6 @@
 		065AFF081AA585C1008138BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065AFF071AA585C1008138BA /* Images.xcassets */; };
 		065AFF0B1AA585C1008138BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065AFF091AA585C1008138BA /* LaunchScreen.xib */; };
 		065AFF171AA585C1008138BA /* lingxiuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065AFF161AA585C1008138BA /* lingxiuTests.swift */; };
-		065AFF211AA5861E008138BA /* huangmoganquan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 065AFF201AA5861D008138BA /* huangmoganquan.plist */; };
 		06A76B311AA7F83F0028F804 /* jieshuoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A76B301AA7F83F0028F804 /* jieshuoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +38,6 @@
 		065AFF101AA585C1008138BA /* lingxiuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lingxiuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		065AFF151AA585C1008138BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		065AFF161AA585C1008138BA /* lingxiuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lingxiuTests.swift; sourceTree = "<group>"; };
-		065AFF201AA5861D008138BA /* huangmoganquan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = huangmoganquan.plist; sourceTree = "<group>"; };
 		06A76B301AA7F83F0028F804 /* jieshuoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jieshuoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		064EBCD21AA95B560007A08E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				065AFF021AA585C1008138BA /* ViewController.swift */,
+				06A76B301AA7F83F0028F804 /* jieshuoViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		065AFEF21AA585C1008138BA = {
 			isa = PBXGroup;
 			children = (
@@ -82,14 +89,12 @@
 		065AFEFD1AA585C1008138BA /* lingxiu */ = {
 			isa = PBXGroup;
 			children = (
+				064EBCD21AA95B560007A08E /* ViewController */,
 				065AFF001AA585C1008138BA /* AppDelegate.swift */,
-				065AFF021AA585C1008138BA /* ViewController.swift */,
 				065AFF041AA585C1008138BA /* Main.storyboard */,
 				065AFF071AA585C1008138BA /* Images.xcassets */,
 				065AFF091AA585C1008138BA /* LaunchScreen.xib */,
 				065AFEFE1AA585C1008138BA /* Supporting Files */,
-				065AFF201AA5861D008138BA /* huangmoganquan.plist */,
-				06A76B301AA7F83F0028F804 /* jieshuoViewController.swift */,
 				064EBCD11AA957840007A08E /* test.playground */,
 			);
 			path = lingxiu;
@@ -200,7 +205,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				065AFF211AA5861E008138BA /* huangmoganquan.plist in Resources */,
 				065AFF061AA585C1008138BA /* Main.storyboard in Resources */,
 				065AFF0B1AA585C1008138BA /* LaunchScreen.xib in Resources */,
 				065AFF081AA585C1008138BA /* Images.xcassets in Resources */,
