@@ -13,6 +13,7 @@
 		065AFF081AA585C1008138BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065AFF071AA585C1008138BA /* Images.xcassets */; };
 		065AFF0B1AA585C1008138BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065AFF091AA585C1008138BA /* LaunchScreen.xib */; };
 		065AFF171AA585C1008138BA /* lingxiuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065AFF161AA585C1008138BA /* lingxiuTests.swift */; };
+		06786ACB1AA9A904004393BA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06786ACA1AA9A904004393BA /* iAd.framework */; };
 		06A76B311AA7F83F0028F804 /* jieshuoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A76B301AA7F83F0028F804 /* jieshuoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		065AFF101AA585C1008138BA /* lingxiuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lingxiuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		065AFF151AA585C1008138BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		065AFF161AA585C1008138BA /* lingxiuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lingxiuTests.swift; sourceTree = "<group>"; };
+		06786ACA1AA9A904004393BA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		06A76B301AA7F83F0028F804 /* jieshuoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jieshuoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06786ACB1AA9A904004393BA /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +74,7 @@
 		065AFEF21AA585C1008138BA = {
 			isa = PBXGroup;
 			children = (
+				06786ACA1AA9A904004393BA /* iAd.framework */,
 				065AFEFD1AA585C1008138BA /* lingxiu */,
 				065AFF131AA585C1008138BA /* lingxiuTests */,
 				065AFEFC1AA585C1008138BA /* Products */,

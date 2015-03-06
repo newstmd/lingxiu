@@ -7,8 +7,9 @@
 //
 
 import UIKit
-
-class jieshuoViewController: UIViewController {
+import iAd
+class jieshuoViewController: UIViewController,ADBannerViewDelegate {
+    @IBOutlet weak var myAdBannerView: ADBannerView!
     
     @IBOutlet weak var myJieShuoTextView: UITextView!
 
@@ -19,6 +20,9 @@ class jieshuoViewController: UIViewController {
         // Do any additional setup after loading the view.
         myJieShuoTextView.text = totlejieshuo
         //myWebView.
+        myAdBannerView.delegate = self
+        myAdBannerView.alpha = 0.0
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,5 +40,9 @@ class jieshuoViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func bannerViewDidLoadAd(banner: ADBannerView!){
+        banner.alpha = 1
+        
+    }
 
 }

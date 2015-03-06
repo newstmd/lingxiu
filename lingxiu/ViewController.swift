@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import iAd
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,ADBannerViewDelegate {
+    
+    @IBOutlet weak var myAdBanner: ADBannerView!
 
     @IBOutlet weak var myTitleLabel: UILabel!
     override func viewDidLoad() {
@@ -19,7 +22,13 @@ class ViewController: UIViewController {
         (totleTitle,totlejieshuo) = readURLMessage(dateNowString)
         //print("here")
         myTitleLabel.text = totleTitle
+        //adBanner
+        myAdBanner.delegate = self
+        myAdBanner.alpha = 0.0
         
+        
+        
+        //adBanner end
         //print("title:\(title)jieshuo:\(jieshuo)")
     }
 
@@ -53,5 +62,9 @@ class ViewController: UIViewController {
         return dateString
     }
 
+    func bannerViewDidLoadAd(banner: ADBannerView!){
+        banner.alpha = 1
+        
+    }
 }
 
