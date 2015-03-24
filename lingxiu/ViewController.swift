@@ -18,7 +18,7 @@ class ViewController: UIViewController,ADBannerViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         var dateNowString = getDateString(NSDate())
-        print(dateNowString)
+        //print(dateNowString)
         (totleTitle,totlejieshuo) = readURLMessage(dateNowString)
         //print("here")
         myTitleLabel.text = totleTitle
@@ -45,13 +45,10 @@ class ViewController: UIViewController,ADBannerViewDelegate {
         urlPath = urlPath.stringByReplacingOccurrencesOfString("xxxx", withString: dateString, options: NSStringCompareOptions.allZeros, range: nil)
         var url:NSURL? = NSURL(string: urlPath)
         var data = NSData(contentsOfURL: url!, options: NSDataReadingOptions.DataReadingUncached, error: nil)?
-        let json:AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil)
+        if let json:AnyObject = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil){
         
-            title = json!.valueForKey("title") as? String
-            jieshuo = json!.valueForKey("jieshuo") as? String
-        //print("title:\(title)jieshuo:\(jieshuo)")
-//        var test = NSDate()
-//        print(test)
+            title = json.valueForKey("title") as? String
+            jieshuo = json.valueForKey("jieshuo") as? String}
         
         return (title!,jieshuo!)
     }
