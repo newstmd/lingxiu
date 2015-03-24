@@ -38,20 +38,22 @@ class ViewController: UIViewController,ADBannerViewDelegate {
     }
     //通过日期格式"0101"获得当天的内容
     func readURLMessage(dateString:String)->(String,String){
+        var title:String?="当前网络异常"
+        var jieshuo:String? = "当前网络异常"
         
         var urlPath = "http://219.153.125.103:12121/gethmgq.aspx?datekey=xxxx"
         urlPath = urlPath.stringByReplacingOccurrencesOfString("xxxx", withString: dateString, options: NSStringCompareOptions.allZeros, range: nil)
-        var url = NSURL(string: urlPath)
-        var data = NSData(contentsOfURL: url!, options: NSDataReadingOptions.DataReadingUncached, error: nil)
-        var json:AnyObject = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil)!
+        var url:NSURL? = NSURL(string: urlPath)
+        var data = NSData(contentsOfURL: url!, options: NSDataReadingOptions.DataReadingUncached, error: nil)?
+        let json:AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil)
         
-        var title = json.valueForKey("title") as String
-        var jieshuo = json.valueForKey("jieshuo") as String
+            title = json!.valueForKey("title") as? String
+            jieshuo = json!.valueForKey("jieshuo") as? String
         //print("title:\(title)jieshuo:\(jieshuo)")
 //        var test = NSDate()
 //        print(test)
         
-        return (title,jieshuo)
+        return (title!,jieshuo!)
     }
 //获取MMdd格式的日期字符串
     func getDateString(date:NSDate)->String{
